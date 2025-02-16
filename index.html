@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bernt Conference</title>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background: url('cas.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 10px 0;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        header p {
+            font-size: 1.3rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        header img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin-top: 15px;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            margin: 10px 15px;
+            padding: 12px 20px;
+            background: #1e90ff;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav a:hover {
+            background: #87cefa;
+            transform: scale(1.1);
+        }
+        .container {
+            padding: 20px;
+            background: #f9f9f9;
+            margin: 20px auto;
+            max-width: 1200px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .section h2 {
+            color: #1e90ff;
+            border-bottom: 3px solid #87cefa;
+            padding-bottom: 5px;
+            font-size: 2rem;
+        }
+        .sponsors img {
+            max-width: 200px;
+            margin: 10px;
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+        .sponsors img:hover {
+            transform: scale(1.2);
+        }
+        footer {
+            background: linear-gradient(to right, #1e90ff, #87cefa);
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Celebrating the 80th Birthday of Professor Bernt Øksendal</h1>
+        <p>August 27–28, 2025 | Norwegian Academy of Science and Letters</p>
+        <img src="bernt.jpg" alt="Bernt Øksendal">
+    </header>
+    <nav>
+        <a href="invited-speakers.html">Invited Speakers</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="organizers.html">Organizers</a>
+        <a href="registration.html">Registration</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Bernt Øksendal</h2>
+            <p>Professor Bernt Øksendal is a globally celebrated mathematician and pioneer in stochastic analysis and financial mathematics. His groundbreaking contributions, particularly in stochastic differential equations and their applications, have profoundly influenced research and education. His seminal textbook on stochastic differential equations remains a foundational resource for mathematicians worldwide.</p>
+        </section>
+        <section id="details">
+            <h2>Event Details</h2>
+            <p>The event will be held at the <strong>Centre for Advanced Study (CAS)</strong>, located at the Norwegian Academy of Science and Letters.</p>
+            <p><strong>Registration:</strong> Registration is <strong>free</strong> but mandatory due to limited seating at CAS.</p>
+            <p>To register, please visit the <a href="registration.html">Registration Page</a>.</p>
+        </section>
+        <section id="hotel">
+            <h2>Stay at Home Hotel Gabelshus</h2>
+            <p>We recommend participants stay at <strong>Home Hotel Gabelshus</strong>, a charming and comfortable accommodation located near the event venue.</p>
+            <div class="hotel">
+                <img src="hotel.jpg" alt="Home Hotel Gabelshus">
+            </div>
+        </section>
+        <section id="sponsors">
+            <h2>Sponsored By</h2>
+            <div class="sponsors">
+                <img src="vr-logo.jpg" alt="VR Logo">
+                <img src="kth-logo.jpg" alt="KTH Logo">
+                <img src="uio-logo.jpg" alt="UiO Logo">
+                <img src="norwegian-academy-logo.jpg" alt="The Norwegian Academy of Science and Letters Logo">
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>© 2025 Bernt Øksendal 80th Birthday Celebration. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(to right, #1e90ff, #87cefa);
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: 3px solid #1e90ff;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+            background: #f9f9f9;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+        input, textarea, button {
+            padding: 10px;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #1e90ff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background: #87cefa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Registration</h1>
+    </header>
+    <div class="container">
+        <p>Please fill in the form below to register for the event. Your details will be sent to the organizing committee.</p>
+        <form action="mailto:nacira@kth.se" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+            <label for="affiliation">Affiliation:</label>
+            <input type="text" id="affiliation" name="affiliation" placeholder="Your Institution or Organization" required>
+
+            <label for="message">Additional Message (Optional):</label>
+            <textarea id="message" name="message" rows="4" placeholder="Add any additional information if needed..."></textarea>
+
+            <button type="submit">Submit Registration</button>
+        </form>
+    </div>
+</body>
+</html>
