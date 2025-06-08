@@ -1,117 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #ffffff;
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background: linear-gradient(to right, #1e90ff, #87cefa);
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-            border-bottom: 3px solid #1e90ff;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            margin: 0;
-            font-weight: bold;
-        }
-        .container {
-            padding: 20px;
-            background: #f9f9f9;
-            margin: 20px auto;
-            max-width: 800px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-        }
-        .container p {
-            margin-bottom: 1em;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        label {
-            font-weight: bold;
-            margin: 10px 0 5px;
-        }
-        input, textarea, select, button {
-            padding: 10px;
-            font-size: 1rem;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            background: #1e90ff;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-        button:hover {
-            background: #87cefa;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bernt Øksendal 80th Birthday – Registration</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f9ff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(to right, #1e90ff, #4682b4);
+      padding: 2rem;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .form-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      border: 1px solid #ccc;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: 1200px;
+      border: 0;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Registration</h1>
-    </header>
-    <div class="container">
-        <p>Please fill in the form below to register for the event. For questions, you may contact:</p>
-        <ul>
-            <li><a href="mailto:nacira@kth.se">Nacira Agram</a></li>
-            <li><a href="mailto:giuliana.dinunno@math.uio.no">Giulia Di Nunno</a></li>
-            <li><a href="mailto:fredb@math.uio.no">Fred Espen Benth</a></li>
-        </ul>
 
-        <p><strong>Note:</strong> Hotel and/or flight bookings will be arranged only for participants with whom this has been explicitly agreed in advance by the organizers.</p>
+<header>
+  <h1>Registration – Bernt Øksendal’s 80th Birthday</h1>
+</header>
 
-        <form action="https://formspree.io/f/mnqepvga" method="POST">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+<div class="form-container">
+  <iframe
+    src="YOUR_GOOGLE_FORM_LINK_HERE?embedded=true"
+    loading="lazy">
+    Loading…
+  </iframe>
+</div>
 
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-
-            <label for="affiliation">Affiliation:</label>
-            <input type="text" id="affiliation" name="affiliation" placeholder="Your Institution or Organization" required>
-
-            <label for="arrival">Arrival Date in Oslo:</label>
-            <input type="date" id="arrival" name="arrival">
-
-            <label for="departure">Departure Date from Oslo:</label>
-            <input type="date" id="departure" name="departure">
-
-            <label for="hotel">Do you need a hotel room?</label>
-            <select id="hotel" name="hotel">
-                <option value="">-- Select --</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-            </select>
-
-            <label for="flights">Would you like us to book your flights?</label>
-            <select id="flights" name="flights">
-                <option value="">-- Select --</option>
-                <option value="Yes, please send options">Yes, please send options</option>
-                <option value="No, I will book myself">No, I will book myself</option>
-            </select>
-
-            <label for="message">Additional Message (e.g., dietary requirements, notes):</label>
-            <textarea id="message" name="message" rows="4" placeholder="Add any additional information here..."></textarea>
-
-            <button type="submit">Submit Registration</button>
-        </form>
-    </div>
 </body>
 </html>
