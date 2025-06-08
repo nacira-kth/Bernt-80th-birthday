@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,6 +33,9 @@
             border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
         }
+        .container p {
+            margin-bottom: 1em;
+        }
         form {
             display: flex;
             flex-direction: column;
@@ -42,7 +44,7 @@
             font-weight: bold;
             margin: 10px 0 5px;
         }
-        input, textarea, button {
+        input, textarea, select, button {
             padding: 10px;
             font-size: 1rem;
             margin-bottom: 15px;
@@ -66,16 +68,45 @@
         <h1>Registration</h1>
     </header>
     <div class="container">
-        <p>Please fill in the form below to register for the event. Your details will be sent to the organizing committee.</p>
+        <p>Please fill in the form below to register for the event. For questions, you may contact:</p>
+        <ul>
+            <li><a href="mailto:nacira@kth.se">Nacira Agram</a></li>
+            <li><a href="mailto:giuliana.dinunno@math.uio.no">Giulia Di Nunno</a></li>
+            <li><a href="mailto:fredb@math.uio.no">Fred Espen Benth</a></li>
+        </ul>
+
         <form action="mailto:nacira@kth.se" method="post" enctype="text/plain">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="Name" placeholder="Your Full Name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="Email" placeholder="Your Email" required>
 
             <label for="affiliation">Affiliation:</label>
-            <input type="text" id="affiliation" name="affiliation" placeholder="Your Institution or Organization" required>
+            <input type="text" id="affiliation" name="Affiliation" placeholder="Your Institution or Organization" required>
 
-            <label for="message">Additional Message (Optional):</label>
-            <textarea id="message" name="message" rows="4" placeholder="Add any additional information if needed..."></textarea>
+            <label for="arrival">Arrival Date in Oslo:</label>
+            <input type="date" id="arrival" name="Arrival Date">
+
+            <label for="departure">Departure Date from Oslo:</label>
+            <input type="date" id="departure" name="Departure Date">
+
+            <label for="hotel">Do you need a hotel room?</label>
+            <select id="hotel" name="Hotel Room">
+                <option value="">-- Select --</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="flights">Would you like us to book your flights?</label>
+            <select id="flights" name="Flight Booking">
+                <option value="">-- Select --</option>
+                <option value="Yes, please send options">Yes, please send options</option>
+                <option value="No, I will book myself">No, I will book myself</option>
+            </select>
+
+            <label for="message">Additional Message (e.g., dietary requirements, notes):</label>
+            <textarea id="message" name="Message" rows="4" placeholder="Add any additional information here..."></textarea>
 
             <button type="submit">Submit Registration</button>
         </form>
