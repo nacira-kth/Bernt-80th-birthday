@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
+    <title>Bernt Øksendal 80th Birthday – Registration</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -65,53 +65,54 @@
 </head>
 <body>
     <header>
-        <h1>Registration</h1>
+        <h1>Registration Form</h1>
     </header>
     <div class="container">
-        <p>Please fill in the form below to register for the event. For questions, you may contact:</p>
-        <ul>
-            <li><a href="mailto:nacira@kth.se">Nacira Agram</a></li>
-            <li><a href="mailto:giuliana.dinunno@math.uio.no">Giulia Di Nunno</a></li>
-            <li><a href="mailto:fredb@math.uio.no">Fred Espen Benth</a></li>
-        </ul>
+        <p>Please complete the form below to register for Bernt Øksendal’s 80th Birthday Conference. If we have already promised accommodation or travel booking, please indicate your dates so we can proceed with arrangements.</p>
 
-        <p><strong>Note:</strong> Hotel and/or flight bookings will be arranged only for participants with whom this has been explicitly agreed in advance by the organizers.</p>
-
-        <form action="https://formspree.io/f/mnqepvga" method="POST">
+        <form action="https://formspree.io/f/your-form-id" method="POST">
             <label for="name">Full Name:</label>
-            <input type="text" id="name" name="Name" placeholder="Your Full Name" required>
+            <input type="text" id="name" name="name" required>
 
             <label for="email">Email Address:</label>
-            <input type="email" id="email" name="Email" placeholder="Your Email" required>
+            <input type="email" id="email" name="email" required>
 
             <label for="affiliation">Affiliation:</label>
-            <input type="text" id="affiliation" name="Affiliation" placeholder="Your Institution or Organization" required>
+            <input type="text" id="affiliation" name="affiliation" required>
 
             <label for="arrival">Arrival Date in Oslo:</label>
-            <input type="date" id="arrival" name="Arrival_Date">
+            <input type="date" id="arrival" name="arrival">
 
             <label for="departure">Departure Date from Oslo:</label>
-            <input type="date" id="departure" name="Departure_Date">
+            <input type="date" id="departure" name="departure">
 
             <label for="hotel">Do you need a hotel room?</label>
-            <select id="hotel" name="Hotel_Room">
+            <select id="hotel" name="hotel">
                 <option value="">-- Select --</option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
             </select>
 
             <label for="flights">Would you like us to book your flights?</label>
-            <select id="flights" name="Flight_Booking">
+            <select id="flights" name="flights">
                 <option value="">-- Select --</option>
-                <option value="Yes, please send options">Yes, please send options</option>
-                <option value="No, I will book myself">No, I will book myself</option>
+                <option value="Yes">Yes, please send options</option>
+                <option value="No">No, I will book myself</option>
             </select>
 
-            <label for="message">Additional Message (e.g., dietary requirements, notes):</label>
-            <textarea id="message" name="Message" rows="4" placeholder="Add any additional information here..."></textarea>
+            <label for="notes">Additional Information (e.g., dietary needs):</label>
+            <textarea id="notes" name="notes" rows="4"></textarea>
 
-            <button type="submit">Submit Registration</button>
+            <button type="submit">Submit</button>
         </form>
+
+        <p>For any questions, please contact:
+            <ul>
+                <li><a href="mailto:nacira@kth.se">Nacira Agram</a></li>
+                <li><a href="mailto:giuliana.dinunno@math.uio.no">Giulia Di Nunno</a></li>
+                <li><a href="mailto:fredb@math.uio.no">Fred Espen Benth</a></li>
+            </ul>
+        </p>
     </div>
 </body>
 </html>
